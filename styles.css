@@ -11,7 +11,8 @@ html {
   height: 100vh;
 }
 .section1 {
-  width: 36.60vw;
+  width: 36.50vw;
+  color: none;
 }
 .odin {
  width: 36.50vw;
