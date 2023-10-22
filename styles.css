@@ -1,0 +1,280 @@
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url(./Norse-Bold.otf);
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+}
+.section1 {
+  width: 36.60vw;
+  background-color: red;
+}
+.odin {
+ width: 36.50vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+.odin > .odin1 {
+  background-color: rgb(4, 4, 4, 0.5);
+  width: 100%;
+  display: flex;
+  font-family: 'Norse-Bold';
+  font-size: 2rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.comentario {
+  background-color: rgba(249, 250, 251, 1);
+  height: 35vh;
+  display: flex;
+  width: 63.40vw;
+  flex-direction: column;
+  justify-content: center;
+}
+.cont-comet {
+  width: 50.69vw;
+  margin-left: 40px;
+}
+main {
+  background-color: rgb(255, 255, 255);
+  height: 260px;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+}
+main > h1 {
+  margin: 20px 0px 10px 40px;
+  font-size: 30px;
+}
+.container {
+  width: 800px;
+  height: 210px;
+}
+.name-last,
+.email-passw,
+.password {
+  display: flex;
+  margin-left: 40px;
+  flex-direction: row;
+}
+.name,
+.info,
+.user-pawo {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-right: 170px;
+}
+label {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(0, 0, 0, 0.577);
+  font-size: 13px;
+}
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='password'] {
+  padding: 5px 10px;
+  width: 250px;
+  border: solid 1px gray;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.crear {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.crear > button {
+  padding: 12px 50px;
+  text-align: center;
+  background-color: #698e4e;
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
+
+.crear > button:hover {
+  background-color: #507c3a;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.crear p {
+  font-weight: 600;
+}
+
+input + span {
+  position: relative;
+}
+input + span::after {
+  position: absolute;
+  color: red;
+  font-size: 16px;
+  top: -33px;
+}
+input:required + span::before {
+  position: absolute;
+  content: '*';
+  font-size: 18px;
+  top: -51px;
+  left: -17px;
+}
+input[type='text']:focus:invalid + span::after {
+  content: 'Nombre invalido';
+}
+input[type='password']:focus:invalid + span::after {
+  content: 'Contraseña invalida';
+}
+input[type='email']:focus:invalid + span::after {
+  content: 'Correo incorrecto';
+}
+
+input:valid + span::after {
+  content: '✔';
+  color: #507c3a;
+  right: -94px;
+  font-size: 20px;
+  top: -58px;
+}
+
+/* Estilos para pantallas de tamaño grande (desktops, laptops) */
+@media screen and (max-width: 1290px) {
+  .section1 {
+    width: 36.60vw;
+    height: 100vh;
+  }
+
+  .odin {
+    width: 36.60vw;
+    flex-grow: 1;
+    height: 120vh;
+  }
+
+  .odin .odin1 > img {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .odin .odin1 {
+    font-size: 1.5rem;
+  }
+
+  .comentario {
+    background-color: rgba(249, 250, 251, 1);
+    height: 45vh;
+    display: flex;
+    width: 72.85vw;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1203px) { 
+  .name,
+  .info,
+  .user-pawo {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-right: 130px;
+  }
+
+  .comentario {
+    height: 30vh;
+    width: 63.40vw;
+  }
+
+  .section1 {
+    width: 36.60vw;
+    height: 100vh;
+  }
+
+  .odin {
+    width: 36.60vw;
+    flex-grow: 1;
+    height: 100vh;
+  }
+
+  input[type='text'],
+  input[type='tel'],
+  input[type='email'],
+  input[type='password'] {
+    padding: 7px 10px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 1085px) { 
+  .name,
+  .info,
+  .user-pawo {
+    width: 150px;
+    margin-right: 90px;
+  }
+
+  .comentario {
+    height: auto;
+    width: 100vw;
+  }
+
+  .section1,
+  .odin {
+    width: 100vw;
+    height: 200px;
+  }
+  .infor {
+ 
+  }
+  body, html {
+    display: flex;
+    flex-direction: column;
+  }
+  .name,
+.info,
+.user-pawo {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-right: calc(20vw - 3vw);
+}
+
+  input[type='text'],
+  input[type='tel'],
+  input[type='email'],
+  input[type='password'] {
+    padding: 8px 20px;
+    margin-bottom: 25px;
+    width: 200px;
+  }
+
+  .crear > button {
+    padding: 10px 30px;
+  }
+
+  input:valid + span::after {
+    content: '✔';
+    right: -73px;
+    top: -53px;
+  }
+  input + span::after {
+    position: absolute;
+    color: red;
+    font-size: 16px;
+    top: -25px;
+  }
+}

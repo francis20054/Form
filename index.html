@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="shortcut icon" href="./icons8-form-96.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="section1">
+      <div class="odin">
+        <div class="odin1">
+          <img width="100px" src="./odin-lined.png" alt="Logo-de-odin" />
+          <h1>ODIN</h1>
+        </div>
+      </div>
+    </section>
+    <section class="infor">
+      <div class="comentario">
+        <div class="cont-comet">
+          <h2>
+            This is not a real online service! You know you need something like this in your life to
+            help realize your deepest dreams. Sign up now to get started
+          </h2>
+          <h2>You know you want to.</h2>
+        </div>
+      </div>
+      <main>
+        <h1>let's do it!</h1>
+        <form action="">
+          <div class="container">
+            <div class="name-last">
+              <div class="name">
+                <label for="name">FIRST NAME</label>
+                <input type="text" name="name" id="name" required />
+                <span></span>
+              </div>
+              <div class="name">
+                <label for="last">LAST NAME</label>
+                <input type="text" name="last" id="last" required />
+                <span></span>
+              </div>
+            </div>
+            <div class="email-passw">
+              <div class="info">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" required />
+                <span></span>
+              </div>
+              <div class="info">
+                <label for="tel">PHONE NUMBER</label>
+                <input type="tel" name="tel" id="tel" />
+                <span></span>
+              </div>
+            </div>
+            <div class="password">
+              <div class="user-pawo">
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" required />
+                <span></span>
+              </div>
+              <div class="user-pawo">
+                <label for="password2">CONFIRM PASSWORD</label>
+                <input type="password" name="password2" id="password2" required />
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="crear">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+          </div>
+          <br />
+        </form>
+      </main>
+    </section>
+  </body>
+</html>
