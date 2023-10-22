@@ -12,14 +12,12 @@ html {
 }
 .section1 {
   width: 36.60vw;
-  background-color: red;
 }
 .odin {
  width: 36.50vw;
   height: 100vh;
   background-size: cover;
   background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
-  background-color: red;
   display: flex;
   align-items: center;
   justify-content: center;
