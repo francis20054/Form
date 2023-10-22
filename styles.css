@@ -90,6 +90,7 @@ input[type='password'] {
   border: solid 1px gray;
   outline: none;
   margin-bottom: 30px;
+  border-radius: 3px;
 }
 
 .crear {
@@ -139,7 +140,9 @@ input[type='password']:focus:invalid + span::after {
 input[type='email']:focus:invalid + span::after {
   content: 'Correo incorrecto';
 }
-
+input:valid {
+  border-color: rgba(25, 25, 153, 0.932);
+}
 input:valid + span::after {
   content: '✔';
   color: #507c3a;
